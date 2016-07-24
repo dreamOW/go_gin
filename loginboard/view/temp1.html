@@ -1,0 +1,32 @@
+<html> 
+<head> 
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	</head>
+	<body>
+	<div class="navbar navbar-inverse">    
+      <div class="container">
+        <a class="navbar-brand" href="/"><strong>一次测试</strong></a>
+        <div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/"><strong>首页</strong></a></li>
+            <li><a href="/index"><strong>登陆</strong></a></li>
+            <li><a href="/toregister"><strong>注册</strong></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+	<div id ="messages"></div>
+	<form id ="myForm" action="/login" method="post"> 
+	<strong>用户名：</strong> <input id ="username" name="username" type="text" class="input-small" placeholder="Email"></input>
+	<strong>密码： </strong>  <input  id ="password" name="password" type="password" class="input-small" placeholder="密码"></input> 
+	<div>
+		<button class="btn btn-primary" type="submit">登陆</button>
+	</div>
+	<div>
+	</form>
+	<form id ="myForm2" action="/toregister" method="get"> 
+	<button class="btn btn-primary" type="submit">注册</button>
+	</form>
+	</div>
+</body>
+</html>
